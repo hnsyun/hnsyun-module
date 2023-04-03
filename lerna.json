@@ -1,5 +1,22 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "useWorkspaces": false,
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    },
+    "publish": {
+      "npmClient": "npm",
+      "ignoreChanges": [
+        "**/test/**"
+      ],
+      "registry": "https://registry.npmjs.org"
+    }
+  }
 }
