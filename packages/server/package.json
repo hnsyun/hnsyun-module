@@ -40,5 +40,6 @@
       "require": "./dist/cjs/index",
       "import": "./dist/esm/index"
     }
-  }
+  },
+  "gitHead": "42e346ec8a68eadb3acdd0286281ac51d70d7217"
 }
