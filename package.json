@@ -5,10 +5,6 @@
   "author": "",
   "license": "ISC",
   "npmClient": "npm",
-  "scripts": {
-    "start:electron": "lerna exec start --scope=@hnsyun/pcliboard-electron  -- npm start",
-    "start:views": "lerna exec start --scope=@hnsyun/pcliboard-view  -- npm start"
-  },
   "workspaces": [
     "packages/*"
   ],
@@ -17,5 +13,8 @@
     "execa": "^5.1.1",
     "load-json-file": "^6.0.1"
   },
-  "dependencies": {}
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/",
+    "access": "public"
+  }
 }
