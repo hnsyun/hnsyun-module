@@ -1,0 +1,39 @@
+{
+  "name": "@hnsyun/pclipboard-utils",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "linghailong <1571799541@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^2.1.0"
+  },
+  "main": "./lib/index.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "dependencies": {
+    "typescript": "^5.0.2"
+  }
+}
